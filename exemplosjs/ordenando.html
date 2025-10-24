@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenando Valores</title>
+</head>
+
+<body>
+    <h1>Ordenando Valores</h1>
+    <div>
+        <label>Valor</label>
+        <br>
+        <input type="number" id="valor" placeholder="Digite um número">
+        <br>
+        <button onclick="add()">Adicionar</button>
+    </div>
+    <div>
+        <br>
+        <select id="algoritmo" name="algoritmo_ordenacao">
+            <option value="bubble" selected>Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="quick">Quick Sort</option>
+        </select>
+        <br>
+        <button onclick="ordenar()">Ordenar</button>
+        <button onclick="misturar()">Misturar</button>
+    </div>
+
+    <h2>Lista de Valores</h2>
+    <ul id="valores">
+        <!-- Itens serão adicionados aqui -->
+    </ul>
+
+    <script src="ordenando.js"></script>
+</body>
+
+</html>
