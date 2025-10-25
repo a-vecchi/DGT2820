@@ -57,6 +57,17 @@ const selection_sort = (vetor) => {
     return vetor;
 };
 
+const quick_sort = (vetor, posIni, posFim) => {
+
+    if (posIni < posFim) {
+        const pos = particionamento(vetor, posIni, posFim);
+        quick_sort(vetor, posIni, pos - 1);
+        quick_sort(vetor, pos + 1, posFim);
+    }
+
+    return vetor;
+};
+
 const particionamento = (vetor, posIni, posFim) => {
     const pivo = vetor[posFim];
     let pivot = posIni;
@@ -72,17 +83,6 @@ const particionamento = (vetor, posIni, posFim) => {
     swap(vetor, pivot, posFim);
 
     return pivot;
-};
-
-const quick_sort = (vetor, posIni, posFim) => {
-
-    if (posIni < posFim) {
-        const pos = particionamento(vetor, posIni, posFim);
-        quick_sort(vetor, posIni, pos - 1);
-        quick_sort(vetor, pos + 1, posFim);
-    }
-
-    return vetor;
 };
 
 function add() {

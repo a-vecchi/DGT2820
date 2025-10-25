@@ -1,0 +1,25 @@
+.card {
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    margin-bottom: 18px;
+}
+
+#pnlCatalogo {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+body.bg-warning {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
